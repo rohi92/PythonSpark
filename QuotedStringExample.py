@@ -1,3 +1,4 @@
+
 def quote_append(input_str):
    l1=list(input_str)
    l2 = list(range(0, len(l1), 1))
