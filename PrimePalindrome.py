@@ -2,6 +2,7 @@ def primePalindrome(self, N):
    """
    :type N: int
    :rtype: int
+   
    """
 
    def is_prime(n):
