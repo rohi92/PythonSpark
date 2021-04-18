@@ -24,4 +24,4 @@ def primePalindrome(self, N):
                i=1
    return N
 if __name__=="__main__":
-   print(primePalindrome("self",100000))
+   print(primePalindrome("self",10000))
