@@ -24,4 +24,8 @@ def primePalindrome(self, N):
                i=1
    return N
 if __name__=="__main__":
+<<<<<<< HEAD:primePalindrome.py
    print(primePalindrome("self",10000))
+=======
+   print(primePalindrome("self",100000))
+>>>>>>> 31c7e357a98ed26fa8e75fac2f2b2fca14b1015f:PrimePalindrome.py
