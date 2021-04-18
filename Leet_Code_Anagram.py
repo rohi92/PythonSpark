@@ -1,5 +1,8 @@
 def isAnagram(self, s, t):
 
+    Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+    Input: s = "anagram", t = "nagaram"
+    Output: true
     """
    :type s: str
    :type t: str
