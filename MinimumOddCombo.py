@@ -1,3 +1,4 @@
+
 from itertools import combinations
 
 def min_odd(num):
