@@ -1,3 +1,4 @@
+
 def solution(A, B):
    # write your code in Python 3.6
    a1=[]
