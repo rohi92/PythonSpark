@@ -35,6 +35,8 @@ def get_pivot_index(nums):
         sum_index.append([i,sum(nums[:i]),sum(nums[i+1:])])
       elif(i==1):
         sum_index.append([1,nums[0],sum(nums[2:])])
+    if (sum(nums[1:]) == 0):
+        sum_index.append([0, 0, 0])
     sum_index=list(filter(lambda x:x[1]==x[2],sum_index))
     return sum_index
 
