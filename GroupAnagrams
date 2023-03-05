@@ -1,0 +1,30 @@
+#  for strs= ["eat","tea","tan","ate","nat","bat"] group anagrams :- [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+
+if __name__=="__main__":
+    dict={}
+    strs= ["eat","tea","tan","ate","nat","bat"]
+    for i in strs:
+        dict[i]=[]
+    for i,j in zip(strs,range(len(strs))):
+        anagaram_list=dict[i]
+        strs1=strs[:]
+        strs1.pop(j)
+
+        for k in strs:
+            #print(i, k)
+            #print(strs[j+1:])
+            if (set(i))==(set(k)):
+                #print(set(i),set(k))
+                anagaram_list.append(k)
+        dict[i]=anagaram_list
+    temp = []
+    for k,v in dict.items():
+        if v not in temp:
+            temp.append(v)
+
+
+
+
+    print(temp)
+
+
