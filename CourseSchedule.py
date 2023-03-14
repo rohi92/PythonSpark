@@ -1,3 +1,6 @@
+#Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]] Output: [0,2,1,3]
+#Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]] Output: [0,2,1,3]
+
 order_list=[]
 def bfs(dict,order_list,course_id):
     try:
