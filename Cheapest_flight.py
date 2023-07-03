@@ -25,6 +25,7 @@ class solution():
         self.flights=flights
         self.visited=[]
         self.path=[]
+        self.cost=0
         
         self.path_options=[]
         dict = {}
