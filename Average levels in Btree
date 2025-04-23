@@ -1,0 +1,47 @@
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+#Given the root of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within 10-5 of the actual answer will be accepted.
+ 
+from collections import deque
+class Solution(object):
+    def averageOfLevels(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: List[float]
+        """
+        def bfs_with_level_size(root):
+            finalres=[]
+            current_iter=0
+            output=[]
+            if not root:
+                return
+            queue = deque([root])
+            while queue:
+                currentsum=0
+                level_size = len(queue)  
+                
+                
+                for _ in range(level_size): 
+                    node = queue.popleft()
+                    if node:
+                        currentsum+=node.val  
+                    else:
+                        currentsum+=0
+
+                    if node.left:
+                        queue.append(node.left)
+                    if node.right:
+                        queue.append(node.right)
+                    
+
+                avgval=float(currentsum)/level_size
+                output.append(avgval)
+            return output
+        
+        output=bfs_with_level_size(root)
+        return output
+        
